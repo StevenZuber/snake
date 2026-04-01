@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <title>Snake</title>
+</head>
+<body>
+  <div id="score-bar">
+    <div id="score">Score: <span id="pts">0</span></div>
+    <div id="high-score">Best: <span id="best">0</span></div>
+    <div id="new-best">New Best!</div>
+  </div>
+  <div id="wrapper">
+    <canvas id="game"></canvas>
+    <div id="message">
+      <h2>Snake</h2>
+      <p>Tap, click, or press any key to start<br>Space to pause</p>
+    </div>
+    <div id="pause-badge">Paused</div>
+  </div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-up">&#9650;</button>
+    <button class="ctrl-btn" id="btn-down">&#9660;</button>
+    <button class="ctrl-btn" id="btn-left">&#9664;</button>
+    <button class="ctrl-btn" id="btn-right">&#9654;</button>
+  </div>
+  <script src="/game.js"></script>
+</body>
+</html>

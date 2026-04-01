@@ -1,0 +1,21 @@
+# Distribution / packaging
+build/
+
+# Unit test / coverage reports
+htmlcov/
+
+# Environments
+.env
+
+# mkdocs documentation
+/site
+
+# VS Code
+.claude/
+.vscode/
+
+# Mac Stuff
+.DS_Store
+
+# node modules
+node_modules/
