@@ -394,11 +394,13 @@
   // Swipe detection
   let touchStartX, touchStartY;
   document.addEventListener("touchstart", (e) => {
+    if (e.target.closest("#controls")) return;
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
   }, { passive: true });
 
   document.addEventListener("touchend", (e) => {
+    if (e.target.closest("#controls")) return;
     if (touchStartX == null) return;
     const dx = e.changedTouches[0].clientX - touchStartX;
     const dy = e.changedTouches[0].clientY - touchStartY;
